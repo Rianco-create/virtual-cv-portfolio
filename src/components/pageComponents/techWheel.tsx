@@ -14,66 +14,66 @@ import {
 
 export default function TechWheel() {
   const iconContainer =
-    "absolute flex h-12 w-12 items-center justify-center rounded-full border-2 border-blue-500 bg-blue-50 shadow-md";
+    "absolute flex h-10 w-10 items-center justify-center rounded-full border-2 border-blue-500 bg-blue-50 shadow-md md:h-12 md:w-12";
 
   return (
-    <div className="flex min-h-screen items-center justify-center">
+    <div className="flex min-h-screen items-center justify-center px-8">
       <div className="tech-wheel-spin rounded-full bg-gradient-to-br from-blue-600 via-cyan-400 to-indigo-600 p-1">
-        <div className="relative flex h-80 w-80 items-center justify-center rounded-full bg-white">
+        <div className="relative flex h-64 w-64 items-center justify-center rounded-full bg-white md:h-80 md:w-80">
           {/* React */}
           <div
             className={`${iconContainer} left-1/2 top-0 -translate-x-1/2 -translate-y-1/2`}
           >
-            <FaReact className="text-2xl text-cyan-500" />
+            <FaReact className="text-xl text-cyan-500 md:text-2xl" />
           </div>
 
           {/* HTML */}
           <div
             className={`${iconContainer} right-0 top-1/2 translate-x-1/2 -translate-y-1/2`}
           >
-            <FaHtml5 className="text-2xl text-blue-600" />
+            <FaHtml5 className="text-xl text-blue-600 md:text-2xl" />
           </div>
 
           {/* CSS */}
           <div
             className={`${iconContainer} bottom-0 right-1/2 translate-x-1/2 translate-y-1/2`}
           >
-            <FaCss3Alt className="text-2xl text-indigo-500" />
+            <FaCss3Alt className="text-xl text-indigo-500 md:text-2xl" />
           </div>
 
           {/* Python */}
           <div
             className={`${iconContainer} bottom-1/2 left-0 -translate-x-1/2 translate-y-1/2`}
           >
-            <FaPython className="text-2xl text-sky-600" />
+            <FaPython className="text-xl text-sky-600 md:text-2xl" />
           </div>
 
           {/* Tailwind CSS */}
           <div
-            className={`${iconContainer} right-11 top-6 translate-x-1/2`}
+            className={`${iconContainer} right-8 top-4 translate-x-1/2 md:right-11 md:top-6`}
           >
-            <SiTailwindcss className="text-2xl text-cyan-400" />
+            <SiTailwindcss className="text-xl text-cyan-400 md:text-2xl" />
           </div>
 
           {/* JavaScript */}
           <div
-            className={`${iconContainer} left-11 top-6 -translate-x-1/2`}
+            className={`${iconContainer} left-8 top-4 -translate-x-1/2 md:left-11 md:top-6`}
           >
-            <SiJavascript className="text-2xl text-blue-500" />
+            <SiJavascript className="text-xl text-blue-500 md:text-2xl" />
           </div>
 
           {/* TypeScript */}
           <div
-            className={`${iconContainer} bottom-6 right-11 translate-x-1/2`}
+            className={`${iconContainer} bottom-4 right-8 translate-x-1/2 md:bottom-6 md:right-11`}
           >
-            <SiTypescript className="text-2xl text-indigo-600" />
+            <SiTypescript className="text-xl text-indigo-600 md:text-2xl" />
           </div>
 
           {/* Java */}
           <div
-            className={`${iconContainer} bottom-6 left-11 -translate-x-1/2`}
+            className={`${iconContainer} bottom-4 left-8 -translate-x-1/2 md:bottom-6 md:left-11`}
           >
-            <FaJava className="text-2xl text-sky-700" />
+            <FaJava className="text-xl text-sky-700 md:text-2xl" />
           </div>
         </div>
       </div>
