@@ -7,14 +7,20 @@ function TopBar() {
       <p>Hello, Rianco!</p>
     </div>
 
-    <nav>
-        <Link
-          to="/Projects"
-        //   activeProps={{ className: "text-blue-600 font-medium" }}
-        >
-          Projects
-        </Link>
+    <nav className="flex items-center gap-10">
+        <Link to="/Projects">Projects</Link>
+        <Link to="/Cv">Curriculum Vitae</Link>
+        <Link to="/About">About</Link>
     </nav>
+    <div> 
+      <button
+        type="button"
+        className="rounded-lg bg-blue-600 px-5 py-2.5 font-medium text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      >
+        Hire Me !
+      </button>
+    </div>
+     
   </header>
 );
 }
