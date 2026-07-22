@@ -34,26 +34,26 @@ export default function ProjectSlider() {
 
 
 return (
-      <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 px-6 py-16 flex flex-row  justify-center items-center gap-10">
+      <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 px-4 py-10 sm:px-6 sm:py-14 lg:py-16 flex flex-row  justify-center items-center gap-10  overflow-hidden md:flex-row md:gap-10">
 
 
         <div >
             <button onClick={handlePrev} className="rounded-full bg-white/80 p-3 shadow-md transition duration-300 hover:bg-blue-50">
-                <SlArrowLeft className="text-blue-600 text-xl" />
+                <SlArrowLeft className="text-blue-600 text-lg sm:text-xl" />
             </button>
         </div>
 
-        <div key={projects[index].id} className="project-slide bg-white rounded-2xl p-6 max-w-xl shadow-xl border border-white/70 ">
+        <div key={projects[index].id} className="project-slide bg-white rounded-2xl p-6 max-w-xl shadow-xl border border-white/70 w-full max-w-xl p-5 sm:p-6">
             <img src={projects[index].image as string}
             alt="Julukaworx"
-            className="h-24 w-24 "  />
+            className="mx-auto h-20 w-20 object-contain sm:h-24 sm:w-24 md:mx-0"  />
             <div className=" flex flex-col gap-7">
-                <h2 className="text-2xl text-slate-900 font-bold">{projects[index].name}</h2>
-                <p className="leading-7 text-slate-600">
+                <h2 className="text-xl sm:text-2xl text-slate-900 font-bold">{projects[index].name}</h2>
+                <p className="line-clamp-6 text-sm leading-6 text-slate-600 sm:line-clamp-none sm:text-base sm:leading-7">
                     {projects[index].description}
                 </p>
             
-                <a className="rounded-xl self-start border border-blue-200 bg-white/80 px-6 py-3 font-medium text-blue-700 shadow-sm transition duration-300 hover:border-blue-400 hover:bg-blue-50" href={projects[index].link} target="_blank" rel="noopener noreferrer">
+                <a className="rounded-xl self-start border border-blue-200 bg-white/80 px-6 py-3 font-medium text-blue-700 shadow-sm transition duration-300 hover:border-blue-400 hover:bg-blue-50" href={projects[index].link} target="_blank" rel="noopener noreferrer self-center md:self-start" >
                 View Project
                 </a>
             
@@ -62,7 +62,7 @@ return (
 
         <div >
             <button onClick={handleNext} className="rounded-full bg-white/80 p-3 shadow-md transition duration-300 hover:bg-blue-50">
-                <SlArrowRight className="text-blue-600 text-xl" />
+                <SlArrowRight className="text-blue-600 text-lg sm:text-xl" />
             </button>
         </div>
 
