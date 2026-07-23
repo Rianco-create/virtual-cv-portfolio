@@ -54,7 +54,7 @@ return (
                 </p>
             
                 <a className="rounded-xl self-start border border-blue-200 bg-white/80 px-6 py-3 font-medium text-blue-700 shadow-sm transition duration-300 hover:border-blue-400 hover:bg-blue-50" href={projects[index].link} target="_blank" rel="noopener noreferrer self-center md:self-start" >
-                View Project
+                    View Project
                 </a>
             
             </div>  
