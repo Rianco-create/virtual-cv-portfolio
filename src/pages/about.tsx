@@ -1,4 +1,5 @@
 import AviationSection from "../components/pageComponents/about/aviationSection";
+import Future from "../components/pageComponents/about/future";
 import Intro from "../components/pageComponents/about/intro";
 import Qualities from "../components/pageComponents/about/qualities";
 import TechS from "../components/pageComponents/about/techSection";
@@ -33,6 +34,12 @@ export default function About() {
         <section className="px-5 py-5 sm:px-8 lg:px-16">
           <div className="mx-auto w-full max-w-6xl">
             <Qualities />
+          </div>
+        </section>
+
+        <section className="px-5 py-5 sm:px-8 lg:px-16">
+          <div className="mx-auto w-full max-w-6xl">
+            <Future />
           </div>
         </section>
 
