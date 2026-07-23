@@ -17,9 +17,9 @@ export default function TechWheel() {
     "absolute flex h-10 w-10 items-center justify-center rounded-full border-2 border-blue-500 bg-blue-50 shadow-md md:h-12 md:w-12";
 
   return (
-    <div className="flex min-h-screen items-center justify-center px-8">
+    <div className="flex items-center justify-center">
       <div className="tech-wheel-spin rounded-full bg-gradient-to-br from-blue-600 via-cyan-400 to-indigo-600 p-1">
-        <div className="relative flex h-64 w-64 items-center justify-center rounded-full bg-white md:h-80 md:w-80">
+        <div className="relative flex h-64 w-64 items-center justify-center rounded-full bg-slate-950 md:h-80 md:w-80">
           {/* React */}
           <div
             className={`${iconContainer} left-1/2 top-0 -translate-x-1/2 -translate-y-1/2`}

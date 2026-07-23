@@ -9,7 +9,7 @@ export default function RootLayout() {
         <Link to="/">Home</Link>
       </nav> */}
       
-      <main style={{ padding: "1rem" }}> 
+      <main > 
         <Outlet />
       </main>
     </div>

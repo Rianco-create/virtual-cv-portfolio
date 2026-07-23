@@ -1,7 +1,13 @@
+import Intro from "../components/pageComponents/about/intro";
+
 export default function About() {
   return (
-    <div>
-        <p className="mt-4 text-lg">About Me.</p>
-    </div>  
+      <main className="min-h-screen bg-slate-950">
+        <section className="lg:px-2 px-6 flex flex-col justify-center items-center">
+              <Intro />
+        </section>
+        
+
+      </main>
   );
 }
