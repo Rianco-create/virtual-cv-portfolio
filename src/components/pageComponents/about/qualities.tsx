@@ -50,27 +50,27 @@ export default function Qualities() {
 
         <div className="flex flex-col py-4">
             <div className="grid grid-cols-1 gap-4 py-6 md:grid-cols-2 lg:grid-cols-3">
-  {qualities.map((quality) => {
-    const Icon = quality.icon;
+            {qualities.map((quality) => {
+                const Icon = quality.icon;
 
-    return (
-      <div
-        key={quality.title}
-        className="rounded-2xl bg-[#262F37] px-5 py-5 shadow-xl sm:px-8"
-      >
-        <Icon className="h-6 w-6 text-emerald-400" />
+                return (
+                <div
+                    key={quality.title}
+                    className="rounded-2xl bg-[#262F37] px-5 py-5 shadow-xl sm:px-8"
+                >
+                    <Icon className="h-6 w-6 text-emerald-400" />
 
-        <h2 className="py-3 text-2xl font-bold leading-[1.15] text-[#F7F5EF]">
-          {quality.title}
-        </h2>
+                    <h2 className="py-3 text-2xl font-bold leading-[1.15] text-[#F7F5EF]">
+                    {quality.title}
+                    </h2>
 
-        <p className="text-base text-slate-300">
-          {quality.description}
-        </p>
-      </div>
-    );
-  })}
-</div>
+                    <p className="text-base text-slate-300">
+                    {quality.description}
+                    </p>
+                </div>
+                );
+            })}
+            </div>
         </div>
 
 
