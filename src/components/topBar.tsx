@@ -44,16 +44,23 @@ function TopBar() {
         >
           About me
         </Link>
+
+         <Link
+          to="/Contact"
+          className="transition hover:text-emerald-400"
+        >
+          Contact
+        </Link>
       </nav>
 
       {/* Hire Me button */}
       <div>
-        <button
-          type="button"
+        <Link
+          to="/Contact"
           className="rounded-lg bg-gradient-to-r from-emerald-500 to-teal-400 px-5 py-2.5 font-semibold text-slate-950 transition hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-emerald-400"
         >
           Hire Me!
-        </button>
+        </Link>
       </div>
 
       {/* Mobile navigation */}
@@ -87,6 +94,16 @@ function TopBar() {
                 className="block transition hover:text-emerald-400"
               >
                 About me
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/Contact"
+                onClick={() => setIsOpen(false)}
+                className="block transition hover:text-emerald-400"
+              >
+                Contact
               </Link>
             </li>
           </ul>

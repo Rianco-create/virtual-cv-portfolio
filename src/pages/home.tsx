@@ -1,4 +1,5 @@
-import profilePic from "../content/willian-souza-p5BoBF0XJUA-unsplash.jpg";
+import profilePic from "../content/ppic.jpeg";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -41,12 +42,12 @@ export default function Home() {
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
-            <button
-              type="button"
-              className="rounded-xl bg-gradient-to-r from-emerald-500 to-teal-400 px-6 py-3 font-semibold text-slate-950 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl"
-            >
-              View My Projects
-            </button>
+                <Link
+                  to="/Projects"
+                  className="rounded-xl bg-gradient-to-r from-emerald-500 to-teal-400 px-6 py-3 font-semibold text-slate-950 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+                >
+                  View My Projects
+                </Link>
 
             <button
               type="button"
