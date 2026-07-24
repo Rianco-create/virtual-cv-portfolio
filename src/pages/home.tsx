@@ -49,12 +49,13 @@ export default function Home() {
                   View My Projects
                 </Link>
 
-            <button
-              type="button"
+            <a
+              href="/Rianco_Rheeder_FlowCV_Resume_2026-07-24.pdf"
+              download
               className="rounded-xl border border-teal-400 bg-transparent px-6 py-3 font-semibold text-[#F7F5EF] shadow-sm transition duration-300 hover:bg-teal-400/10"
             >
               Download CV
-            </button>
+            </a>
           </div>
         </div>
       </section>

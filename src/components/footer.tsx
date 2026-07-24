@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { HiOutlineEnvelope } from "react-icons/hi2";
+import {
+  HiOutlineEnvelope,
+  HiOutlinePhone,
+  HiOutlineGlobeAlt,
+  HiOutlineMapPin,
+} from "react-icons/hi2";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,6 +21,10 @@ export default function Footer() {
               Rheeder
             </span>
           </h2>
+
+          <p className="mt-2 text-sm font-medium text-emerald-400">
+            Web Developer
+          </p>
 
           <p className="mt-4 max-w-sm text-sm leading-7 text-slate-300">
             A final-year BSc Information Technology student passionate about
@@ -43,37 +52,74 @@ export default function Footer() {
             <Link to="/About" className="transition hover:text-emerald-400">
               About me
             </Link>
+
+            <Link to="/Contact" className="transition hover:text-emerald-400">
+              Contact
+            </Link>
           </nav>
         </div>
 
-        {/* Social links */}
+        {/* Contact and social links */}
         <div>
           <h2 className="text-lg font-semibold">Connect with me</h2>
 
-          <div className="mt-4 flex gap-3">
+          <div className="mt-4 flex flex-col gap-3 text-sm text-slate-300">
             <a
-              href="https://github.com/your-username"
+              href="mailto:rheederrianco22@gmail.com"
+              className="flex items-center gap-3 transition hover:text-emerald-400"
+            >
+              <HiOutlineEnvelope className="h-5 w-5 text-emerald-400" />
+              rheederrianco22@gmail.com
+            </a>
+
+            <a
+              href="tel:+27747850552"
+              className="flex items-center gap-3 transition hover:text-emerald-400"
+            >
+              <HiOutlinePhone className="h-5 w-5 text-emerald-400" />
+              074 785 0552
+            </a>
+
+            <div className="flex items-center gap-3">
+              <HiOutlineMapPin className="h-5 w-5 text-emerald-400" />
+              Potchefstroom, North West
+            </div>
+
+            <a
+              href="https://rianco.jwlisting.co.za"
               target="_blank"
               rel="noreferrer"
-              aria-label="Visit my GitHub profile"
+              className="flex items-center gap-3 transition hover:text-emerald-400"
+            >
+              <HiOutlineGlobeAlt className="h-5 w-5 text-emerald-400" />
+              rianco.jwlisting.co.za
+            </a>
+          </div>
+
+          <div className="mt-5 flex gap-3">
+            <a
+              href="https://github.com/Rianco-create"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit Rianco Rheeder's GitHub profile"
               className="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-700 bg-[#262F37] text-emerald-400 transition hover:-translate-y-1 hover:border-emerald-400"
             >
               <FaGithub className="h-5 w-5" />
             </a>
 
             <a
-              href="https://linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/rianco-rheeder-7b2434335"
               target="_blank"
               rel="noreferrer"
-              aria-label="Visit my LinkedIn profile"
+              aria-label="Visit Rianco Rheeder's LinkedIn profile"
               className="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-700 bg-[#262F37] text-emerald-400 transition hover:-translate-y-1 hover:border-emerald-400"
             >
               <FaLinkedinIn className="h-5 w-5" />
             </a>
 
             <a
-              href="mailto:your-email@example.com"
-              aria-label="Send me an email"
+              href="mailto:rheederrianco22@gmail.com"
+              aria-label="Send Rianco Rheeder an email"
               className="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-700 bg-[#262F37] text-emerald-400 transition hover:-translate-y-1 hover:border-emerald-400"
             >
               <HiOutlineEnvelope className="h-5 w-5" />
@@ -83,13 +129,9 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto mt-10 flex w-full max-w-6xl flex-col gap-3 border-t border-slate-700 pt-6 text-center text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between sm:text-left">
-        <p>
-          © {currentYear} Rianco Rheeder. All rights reserved.
-        </p>
+        <p>© {currentYear} Rianco Rheeder. All rights reserved.</p>
 
-        <p>
-          Built with React, TypeScript and Tailwind CSS.
-        </p>
+        <p>Built with React, TypeScript and Tailwind CSS.</p>
       </div>
     </footer>
   );

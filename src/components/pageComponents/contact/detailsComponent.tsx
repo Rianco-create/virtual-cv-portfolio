@@ -13,19 +13,19 @@ export default function Details() {
   const contactDetails = [
     {
       title: "Email",
-      value: "your-email@example.com",
+      value: "rheederrianco22@gmail.com",
       icon: HiOutlineEnvelope,
-      link: "mailto:your-email@example.com",
+      link: "mailto:rheederrianco22@gmail.com",
     },
     {
       title: "Phone",
-      value: "+27 00 000 0000",
+      value: "074 785 0552",
       icon: HiOutlinePhone,
-      link: "tel:+27000000000",
+      link: "tel:+27747850552",
     },
     {
       title: "Location",
-      value: "South Africa",
+      value: "Potchefstroom, North West",
       icon: HiOutlineMapPin,
     },
     {
@@ -40,9 +40,9 @@ export default function Details() {
     },
     {
       title: "Website",
-      value: "yourwebsite.co.za",
+      value: "rianco.jwlisting.co.za",
       icon: HiOutlineGlobeAlt,
-      link: "https://yourwebsite.co.za",
+      link: "https://rianco.jwlisting.co.za",
     },
   ];
 
@@ -90,14 +90,8 @@ export default function Details() {
             <a
               key={detail.title}
               href={detail.link}
-              target={
-                detail.link.startsWith("http") ? "_blank" : undefined
-              }
-              rel={
-                detail.link.startsWith("http")
-                  ? "noreferrer"
-                  : undefined
-              }
+              target={detail.link.startsWith("http") ? "_blank" : undefined}
+              rel={detail.link.startsWith("http") ? "noreferrer" : undefined}
               className="flex items-center gap-4 rounded-xl border border-slate-700 bg-[#262F37] px-4 py-4 shadow-xl transition hover:border-emerald-400"
             >
               {cardContent}
@@ -119,7 +113,7 @@ export default function Details() {
 
       <div className="flex flex-wrap gap-3 py-5">
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/rianco-rheeder-7b2434335"
           target="_blank"
           rel="noreferrer"
           className="flex items-center gap-3 rounded-xl border border-slate-700 bg-[#262F37] px-4 py-3 text-sm text-slate-300 transition hover:border-emerald-400 hover:text-white"
@@ -129,7 +123,7 @@ export default function Details() {
         </a>
 
         <a
-          href="https://github.com"
+          href="https://github.com/Rianco-create"
           target="_blank"
           rel="noreferrer"
           className="flex items-center gap-3 rounded-xl border border-slate-700 bg-[#262F37] px-4 py-3 text-sm text-slate-300 transition hover:border-emerald-400 hover:text-white"
