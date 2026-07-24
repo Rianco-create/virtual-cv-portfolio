@@ -1,75 +1,136 @@
-# React + TypeScript + Vite
+# Rianco Rheeder Virtual CV
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+This Virtual CV is a personal portfolio website developed to present my academic background, technical skills, projects, professional interests, and contact information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The website serves as an online version of my curriculum vitae and provides visitors with an interactive way to learn more about me and view the projects I have developed.
 
-## React Compiler
+## Purpose of the Virtual CV
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The purpose of this project is to:
 
-## Expanding the ESLint configuration
+- Present my professional and academic profile
+- Showcase my technical skills and development experience
+- Display completed web-development projects
+- Provide access to my curriculum vitae
+- Make it easy for employers and professionals to contact me
+- Demonstrate my ability to develop a modern and responsive website
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Website Sections
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Home
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+The Home page introduces me as a final-year BSc Information Technology student. It includes a short professional summary, profile image, links to my projects, and access to my CV.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### About Me
 
-```
+The About Me page provides more information about my background, interests, personal qualities, and future goals.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+It includes:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- My passion for technology
+- My technical experience
+- My passion for aviation
+- Personal qualities that influence my work
+- My future career goals
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Projects
 
-```
+The Projects page presents some of the websites and digital solutions I have developed.
+
+Each project includes:
+
+- Project name
+- Project description
+- Project image or logo
+- Link to the live website
+
+The featured projects include:
+
+- JulukaWorx Directory
+- Endura Construction
+- JulukaWorx
+
+### Skills
+
+The website highlights technologies and tools I have experience using, including:
+
+- React
+- TypeScript
+- JavaScript
+- Tailwind CSS
+- HTML
+- CSS
+- Python
+- Java
+
+### Curriculum Vitae
+
+The CV section provides access to my professional CV, including my education, skills, experience, achievements, and contact information.
+
+### Contact
+
+The Contact page provides different ways to contact or connect with me.
+
+It includes:
+
+- Email
+- Phone number
+- Location
+- LinkedIn profile
+- GitHub profile
+- Personal website
+
+## Technologies Used
+
+The Virtual CV was developed using:
+
+- Vite
+- React
+- TypeScript
+- Tailwind CSS
+- React Router
+- React Icons
+
+## Responsive Design
+
+The website was designed to work across different screen sizes, including:
+
+- Mobile phones
+- Tablets
+- Laptops
+- Desktop monitors
+
+Responsive Tailwind CSS classes were used to adjust layouts, navigation, text sizes, spacing, and cards for different devices.
+
+## Main Features
+
+- Responsive navigation bar
+- Mobile burger menu
+- Project slider
+- Technology wheel
+- Smooth page scrolling
+- Responsive cards and sections
+- Downloadable CV
+- Links to GitHub and LinkedIn
+- Contact information
+- Dark charcoal, emerald, and teal colour scheme
+
+## Live Website
+
+The Virtual CV can be viewed at:
+
+[Add your live website link here]
+
+## GitHub Repository
+
+The source code is available at:
+
+[Add your GitHub repository link here]
+
+## Author
+
+**Rianco Rheeder**
+
+Final-year BSc Information Technology student with a passion for programming, web development, aviation, and creating practical digital solutions.
